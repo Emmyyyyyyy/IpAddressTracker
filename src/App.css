@@ -43,7 +43,7 @@ input::placeholder {
 
 .info-wrapper {
   width: 1000px;
-  height: 160px;
+  /* height: 160px; */
   /* background: blue; */
   background: white;
   border-radius: 15px;
