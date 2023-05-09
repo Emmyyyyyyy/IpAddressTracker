@@ -1,5 +1,5 @@
 .wrapper {
-  background-image: url('../src/images/pattern-bg-desktop.png'), url('../src/images/map.png');
+  background-image: url('../src/images/pattern-bg-desktop.png');
   width: 1440px;
   height: 100vh;
   background-repeat: no-repeat;
