@@ -56,7 +56,7 @@ function App() {
   return (
     <div className="wrapper">
       <div className="content">
-        <h1 className="test">IP Address Tracker</h1>
+        <h1 className="header">IP Address Tracker</h1>
         <div className="input-wrapper">
           <input
             value={input}
