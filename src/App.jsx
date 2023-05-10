@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect } from 'react';
@@ -54,41 +55,42 @@ function App() {
 
   return (
     <div className="wrapper">
-      <div className="content" />
-      <h1 className="test">IP Address Tracker</h1>
-      <div className="input-wrapper">
-        <input
-          value={input}
-          placeholder="Search for any IP address or domain"
-          className="input-box"
-          onChange={(event) => handleChange(event)}
-        />
-        <div className="button" onClick={handleClick}>
-          <img src={iconArrow} alt="icon" />
+      <div className="content">
+        <h1 className="test">IP Address Tracker</h1>
+        <div className="input-wrapper">
+          <input
+            value={input}
+            placeholder="Search for any IP address or domain"
+            className="input-box"
+            onChange={(event) => handleChange(event)}
+          />
+          <div className="button" onClick={handleClick}>
+            <img src={iconArrow} alt="icon" />
+          </div>
         </div>
-      </div>
-      <div className="info-wrapper">
-        <div className="info-box">
-          <div className="box">
-            <p className="info-head">IP ADDRESS</p>
-            <p className="info-text">{data?.ip}</p>
-          </div>
-          <div className="devided-line" />
-          <div className="box">
-            <p className="info-head">LOCATION</p>
-            <p className="info-text">
-              {data?.location?.city}, {data?.location?.country}
-            </p>
-          </div>
-          <div className="devided-line" />
-          <div className="box">
-            <p className="info-head">TIMEZONE</p>
-            <p className="info-text">{data?.location.timezone}</p>
-          </div>
-          <div className="devided-line" />
-          <div className="box">
-            <p className="info-head">ISP</p>
-            <p className="info-text">{data?.isp}</p>
+        <div className="info-wrapper">
+          <div className="info-box">
+            <div className="box">
+              <p className="info-head">IP ADDRESS</p>
+              <p className="info-text">{data?.ip}</p>
+            </div>
+            <div className="devided-line" />
+            <div className="box">
+              <p className="info-head">LOCATION</p>
+              <p className="info-text">
+                {data?.location?.city}, {data?.location?.country}
+              </p>
+            </div>
+            <div className="devided-line" />
+            <div className="box">
+              <p className="info-head">TIMEZONE</p>
+              <p className="info-text">{data?.location.timezone}</p>
+            </div>
+            <div className="devided-line" />
+            <div className="box">
+              <p className="info-head">ISP</p>
+              <p className="info-text">{data?.isp}</p>
+            </div>
           </div>
         </div>
       </div>
